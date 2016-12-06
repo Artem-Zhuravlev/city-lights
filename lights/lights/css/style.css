@@ -1,0 +1,1195 @@
+@font-face {
+    font-family:'proximaRegular';
+    src: url('../fonts/proxima Regular.eot');
+	src: url('../fonts/proxima Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/proxima Regular.woff2') format('woff2'),
+		url('../fonts/proxima Regular.woff') format('woff'),
+		url('../fonts/proxima Regular.svg#a Regular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+000D-FB04;
+}
+@font-face {
+    font-family:'proximaBold';
+    src: url('../fonts/proxima Bold.eot');
+    src: url('../fonts/proxima Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/proxima Bold.woff2') format('woff2'),
+        url('../fonts/proxima Bold.woff') format('woff'),
+        url('../fonts/proxima Bold.svg#a Bold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+000D-FB04;
+}
+
+body{
+    width: 100%;
+    margin: 0 auto;
+}
+
+/*General-reset*/
+*{
+    -webkit-box-sizing: border-box ;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6 ,p{
+    margin: 0;
+    padding: 0;
+}
+ul, ol{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a{
+    text-decoration:none;
+    color: #000;
+}
+a:visited, a:link, a:active{
+    color: #000;
+    text-decoration: none;
+}
+a:hover,
+a:focus{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+    border: none;
+    outline: none;
+}
+div:focus{
+    outline: none;
+}
+input, button{
+    outline: none;
+    border:none;
+}
+textarea{
+    resize: vertical;
+}
+/*============General-reset-end================*/
+h1{
+    font-size: 55px;
+    font-family:'proximaBold';
+    color: #fff;
+}
+h2{
+    font-size: 52px;
+}
+h3{
+    font-size: 48px;
+}
+h2, h3{
+    font-family: "Georgia";
+    color: #000;
+}
+h4{
+    font-size: 24px;
+}
+h5{
+    font-size: 22px;
+}
+h6{
+    font-size: 16px;
+}
+p{
+    font-size: 20px;
+}
+.wrapper{
+    width: 1300px;
+    margin: 0 auto;
+}
+.container{
+    width: 960px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.header{
+    background: url(../img/header-bg.jpg)no-repeat center top;
+}
+.header-top{
+    font-size: 0;
+    padding-top: 43px;
+    overflow: hidden;
+}
+.header-top__col{
+    width: 50%;
+    float: left;
+    display: table;
+}
+.header-top__logo{
+    padding-left: 43px;
+    background: url(../img/header-logo.png)no-repeat left center;
+}
+.header-top__logo h3{
+    font-size: 46px;
+    color: #fff;
+    font-family: "Georgia";
+    line-height: 1.1;
+}
+.header-top__logo h4{
+    font-size: 25px;
+    color: #fff;
+    font-family: "Georgia";
+    padding-left: 15px;
+}
+.header-top__phone{
+    text-align: right;
+}
+.header-top__phone h3{
+    font-size: 40px;
+    color: #fff;
+    font-family:'proximaBold';
+    letter-spacing: 2px;
+}
+.header-top__phone h3 span{
+    font-family:'proximaRegular';
+}
+.header-top__phone h5{
+    color: #fff;
+    font-family:'proximaRegular';
+}
+.header-top__nav{
+    padding-top: 10px;
+}
+.header-top__nav li{
+    display: inline-block;
+    margin-left: 30px;
+}
+.header-top__nav i{
+    font-size: 23px;
+    color: #fff;
+}
+.header-bottom{
+    padding: 10px 0 337px 0;
+    text-align: center;
+}
+.main-nav{
+    background: linear-gradient(to top, #e7e01e, #f3ea23, #e7e01e);
+}
+.main-nav li{
+    display: inline-block;
+    padding: 0 26px;
+    border-left: 1px solid #8c8813;
+}
+.main-nav li:first-child{
+    border-left: none;
+}
+.main-nav li a{
+    font-size: 14px;
+    font-family:'proximaBold';
+    text-transform: uppercase;
+    line-height: 3.5;
+}
+.main-about{
+    padding: 93px 0 33px 0;
+    background: #c7efef url(../img/main-about-bg.png)no-repeat center center;
+}
+.main-about__holder{
+    overflow: hidden;
+}
+.main-about__left{
+    width: 20%;
+    float: left;;
+}
+.main-about__left h4{
+    padding-bottom: 24px;
+    font-family:'proximaBold';
+}
+.main-about__partners li{
+    margin-bottom: 15px;
+}
+.main-about__partners li a{
+    display: block;
+    width: 213px;
+    height: 76px;
+    border-radius: 5px;
+}
+.main-about__partners li:first-child a{
+    background: #7cae3f url(../img/sberbank.png)no-repeat center center;
+}
+.main-about__partners li:nth-child(2) a{
+    background: #e60a2c url(../img/piter-bank.png)no-repeat center center;
+}
+.main-about__partners li:nth-child(3) a{
+    background: #69a04d url(../img/socbank.png)no-repeat center center;
+}
+.main-about__partners li:nth-child(4) a{
+    background: #0a2972 url(../img/vtb24.png)no-repeat center center;
+}
+.main-about__partners li:nth-child(5) a{
+    background: #f8ef26 url(../img/raifaizen.png)no-repeat center center;
+}
+.main-about__partners li:nth-child(6) a{
+    background: #fff url(../img/bank.jpg)no-repeat center center;
+    border: 3px solid #87b749;
+}
+.main-about__right{
+    width: 61%;
+    float: left;;
+}
+.main-about__right p{
+    color: #000;
+    font-size: 20px;
+    font-family:'proximaRegular';
+    line-height: 1.5;
+    margin-bottom: 43px;
+}
+.main-about__right p span{
+    font-size: 26px;
+    font-family: "Georgia";
+    font-weight: bold;
+}
+.main-form{
+    position: relative;
+    background: #50505a;
+    z-index: 2;
+}
+.main-form:after{
+    content: "";
+    position: absolute;
+    width: 39%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #ff5e5b;
+    z-index: -1;
+}
+.main-form__holder{
+    overflow: hidden;
+}
+.main-form__left{
+    width: 39%;
+    float: left;
+    text-align: right;
+    padding: 76px 68px 0 0;
+}
+.main-form__left h2{
+    font-family:'proximaBold';
+    line-height: 1.1;
+}
+.main-form__left h2 span{
+    font-size: 130px;
+}
+.main-form__left h4{
+    font-family:'proximaRegular';
+    line-height: 1.5;
+}
+.main-form__right{
+    width: 61%;
+    float: left;
+    padding:80px 0 78px 57px;
+}
+.main-form__right input[name="name"],
+.main-form__right input[name="phone"],
+.main-form__right textarea{
+    width: 100%;
+    display: block;
+    height: 60px;
+    font-family:'proximaRegular';
+    padding-left: 21px;
+    font-size: 18px;
+    margin-bottom: 19px;
+    letter-spacing: 1px;
+    outline: none;
+}
+.main-form__right input[name="name"]:focus,
+.main-form__right input[name="phone"]:focus,
+.main-form__right textarea:focus{
+    border: 2px solid #e79b9a;
+}
+.main-form__right textarea{
+    height: 100px;
+    padding-top: 17px;
+}
+.main-form__right input[type="submit"]{
+    height: 60px;
+    width: 340px;
+    background: #ff5e5b;
+    border-radius: 28px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-family:'proximaBold';
+    margin-top: 4px;
+    letter-spacing: 1px;
+    transition: .5s;
+    cursor: pointer;
+}
+.main-form__right input[type="submit"]:hover{
+    background: #d54a48;
+}
+.main-advantages__title{
+    padding-top: 92px;
+    padding-bottom: 49px;
+}
+.main-advantages__title h2{
+    text-align: center;
+}
+.main-advantages{
+    background: url(../img/main-advantages.jpg)no-repeat center top; 
+}
+.advantages__holder{
+    height: 260px;
+    position: relative;
+    z-index: 2;
+}
+.adv_first:before{
+    content: "";
+    width: 50%;
+    height: 260px;
+    background: #f8ef26;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.adv_second:before{
+    content: "";
+    width: 50%;
+    height: 260px;
+    background: #01afba;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+.adv_first__col{
+    width: 50%;
+    overflow: hidden;
+}
+.adv_second__col{
+    margin-left: 50%;
+    width: 50%;
+    overflow: hidden;
+}
+.adv_first__item{
+    width: 33.333%;
+    float: left;
+    text-align: center;
+}
+.adv_first__item h5{
+    padding-top: 147px;
+    color: #3c3c12;
+    font-family:'proximaRegular';
+}
+.adv_one{
+    background: url(../img/advantages_buy.png)no-repeat center 60px;
+}
+.adv_two{
+    background: url(../img/advantages_house.png)no-repeat center 60px;
+}
+.adv_three{
+    background: url(../img/advantages_room.png)no-repeat center 60px;
+}
+.adv_four{
+    background: url(../img/adv_cran.png)no-repeat center 48px;
+}
+.adv_five{
+    background: url(../img/adv_bank.png)no-repeat center 69px;
+}
+.adv_six{
+    background: url(../img/advantages_capital.png)no-repeat center 60px;
+}
+.adv_seven{
+    background: url(../img/advantages_military.png)no-repeat center 60px;
+}
+.adv_eight{
+    background: url(../img/advantages_programs.png)no-repeat center 60px;
+}
+.adv_nine{
+    background: url(../img/adv_deal.png)no-repeat center 60px;
+}
+.adv_ten{
+    background: url(../img/adv_arenda.png)no-repeat center 49px;
+}
+.adv_second__item{
+    width: 40%;
+    float: left;
+    text-align: center;
+    margin: 0 20px;
+}
+.adv_second__item h5{
+    padding-top: 138px;
+    color: #fff;
+    font-family:'proximaRegular';
+}
+.main-objects__holder{
+    margin-bottom: 43px;
+}
+.main-objects{
+    padding-top: 94px;
+}
+.main-objects h2{
+    text-align: center;
+    padding-bottom: 40px;
+}
+.main-objects__col{
+    width: 30%;
+    display: inline-block;
+    margin: 0 20px;
+    background: #f7fdfd;
+}
+.main-objects__col button{
+    width: 100%;
+    height: 47px;
+    background: #01afba;
+    color: #fff;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-family:'proximaBold';
+    cursor: pointer;
+    transition: .5s;
+}
+.main-objects__col button:hover{
+    background: #0a9099;
+}
+.main-objects_btn{
+    width: 100%;
+    height: 60px;
+    border: 2px solid #01afba;
+    background: transparent;
+    cursor: pointer;
+    font-size: 15px;
+    font-family:'proximaBold';
+    text-transform: uppercase;
+    color: #01afba;
+    transition: .5s;
+}
+.main-objects_btn:hover{
+    background: #01afba;
+    color: #fff;
+}
+.main-objects__desc{
+    padding: 20px 25px 0 25px;
+}
+.main-objects__desc h4{
+    font-size: 26px;
+    font-family:'proximaBold';
+    padding-bottom: 12px;
+}
+.main-objects__desc h6{
+    font-family:'proximaRegular';
+    padding-bottom: 25px;
+}
+.main-objects__desc h6 span{
+    font-family:'proximaBold';
+}
+.main-objects__desc h5{
+    font-family:'proximaBold';
+    padding-bottom: 37px;
+}
+.main-specialists{
+    background: url(../img/specialists-bg.jpg)no-repeat center top;
+    padding: 89px 0 95px 0;
+    margin-top: -18px;
+}
+.main-specialists h2{
+    text-align: center;
+    position: relative;
+    padding-top: 53px;
+    margin-bottom: 73px;
+}
+.main-specialists h2:before{
+    content: "";
+    width: 100px;
+    height: 4px;
+    background: #01afba;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.spec__item img{
+    display: block;
+    padding: 8px;
+    border: 1px solid #01afba;
+    box-shadow: 5px 10px 10px #f5f5f5;
+}
+.container-carosel{
+    width: 790px;
+    margin: 0 auto;
+}
+.owl-carousel-first .owl-controls{
+    width: 100%;
+    position: absolute;
+    top: 30%;
+}
+.owl-carousel-first .owl-prev{
+    position: absolute;
+    left: -80px;
+    color: transparent;
+    width: 65px;
+    height: 19px;
+    background: url(../img/arrow-prev.png);
+}
+.owl-carousel-first .owl-next{
+    position: absolute;
+    right: -80px;
+    color: transparent;
+    width: 65px;
+    height: 19px;
+    background: url(../img/arrow-next.png);
+}
+.spec__item{
+    text-align: center;
+}
+.spec__item h4{
+    font-family:'proximaBold';
+    margin-top: 8px;
+}
+.spec__item h5{
+    font-size: 16px;
+    font-family:'proximaBold';
+    margin-bottom: 10px;
+}
+.spec__item h6{
+    font-size: 16px;
+    color: #000;
+    font-family:'proximaBold';
+}
+.second-carousel{
+    margin: 80px 0;
+}
+.main-specialists .title-vacancy{
+    margin-bottom: 15px;
+    padding-top: 30px;
+}
+.main-specialists h4{
+    text-align: center;
+    font-family:'proximaRegular';
+}
+.main-specialists h4 span{
+    font-family: "Georgia";
+}
+.client-container{
+    width: 660px;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+.client-col{
+    width: 32.333%;
+    display: inline-block;
+    text-align: center;
+}
+.client-col img{
+    margin-bottom: -13px;
+}
+.client-col h4{
+    font-family:'proximaBold';
+}
+.client-col h6{
+    font-family:'proximaRegular';
+    color: #4f515a;
+}
+.client-container button{
+    margin: auto;
+    display: block;
+    width: 350px;
+    height: 60px;
+    background: #01afba;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 15px;
+    border-radius: 28px;
+    cursor: pointer;
+    font-family:'proximaRegular';
+    margin-top: 58px;
+    transition: .5s;
+}
+.client-container button:hover{
+    background: #0a9099;
+}
+.main-recalls{
+    background: #d7eded;
+    padding: 80px 0;
+    overflow: hidden;
+}
+.main-recalls h3{
+    text-align: center;
+    padding-bottom: 35px;
+}
+.main-recalls h4{
+    width: 68%;
+    text-align: center;
+    font-family:'proximaRegular';
+    margin: auto;
+    padding-bottom: 36px;
+    border-bottom: 1px solid #a5dfe1;
+    margin-bottom: 30px;
+}
+.recalls__links{
+    text-align: center;
+    padding-bottom: 40px;
+}
+.url-link{
+    width: 120px;
+    height: 120px;
+    display: inline-block;
+    opacity: .5;
+    margin: 0 20px;
+}
+.url-link:focus{
+    opacity: 1;
+    padding: 7px;
+    border: 4px solid #01afba;
+    border-radius: 50%;
+}
+.first-client{
+    background: url(../img/client1.png)no-repeat center center;
+}
+.second-client{
+    background: url(../img/client2.png)no-repeat center center;
+}
+.third-client{
+    background: url(../img/client3.png)no-repeat center center;
+} 
+.fourth-client{
+    background: url(../img/client4.png)no-repeat center center;
+}
+.owl-carousel-second p{
+    width: 100%;
+    line-height: 1.5;
+    padding-left: 145px;
+    font-family:'proximaRegular';
+    position: relative;
+    background: url(../img/recall-comment.png)no-repeat 53px top;
+}
+.owl-carousel-second h4{
+    text-align: left;
+    border-bottom: none;
+    margin-top: 37px;
+    padding-bottom: 8px;
+    margin-bottom: 0;
+    font-family:'proximaBold';
+}
+.owl-carousel-second a{
+    text-decoration: underline;
+    color: #000;
+    display: block;
+    padding-left: 145px;
+    font-size: 15px;
+    font-family:'proximaBold';
+}
+.main-partners{
+    padding-top: 74px;
+}
+.main-partners h3{
+    text-align: center;
+    margin-bottom: 75px;
+
+}
+.main-partners__col{
+    font-size: 0;
+    margin-bottom: 85px;
+}
+.main-partners__item{
+    text-align: center;
+    width: 20%;
+    display: inline-block;
+}
+.footer-map{
+    width: 100%;
+    height: 550px;
+}
+.footer{
+    background: #d7eded;
+    font-size: 0;
+    padding: 32px 0;
+}
+.footer-left{
+    width: 65%;
+    display: inline-block;
+}
+.footer-left p{
+    font-size: 14px;
+    font-family:'proximaRegular';
+}
+.footer-left p span{
+    font-size: 12px;
+}
+.footer-right{
+    width: 35%;
+    display: inline-block;
+    font-size: 0;
+}
+.footer-right__col{
+    width: 50%;
+    display: inline-block;
+}
+.footer-right__nav ul li{
+    display: inline-block;
+    margin: 0 15px;
+}
+.footer-right__nav ul li i{
+    font-size: 30px;
+    transition: .3s;
+}
+.footer-right__nav ul li i:hover{
+    color: #0a9099;
+}
+.footer-right__col h4{
+    font-family:'proximaRegular';
+    letter-spacing: 1px;
+}
+.footer-right__col h4 span{
+    font-family:'proximaBold';
+}
+.footer-right__col p{
+    font-size: 12px;
+    font-family:'proximaRegular';
+}
+
+/*modal first*/
+.col-5{
+    width: 50%;
+    float: left;
+}
+#myModal .modal-dialog,
+#myModal2 .modal-dialog{
+    width: 960px;
+}
+#myModal .modal-content,
+#myModal2 .modal-content{
+    border-radius: 0;
+}
+#myModal .modal-body{
+    padding: 32px;
+    overflow: hidden;
+}
+.myModal__img{
+    margin-bottom: 45px;
+}
+.myModal__consult{
+    overflow: hidden;
+}
+.myModal__consult img{
+    padding: 10px;
+    border: 1px solid #01afba;
+}
+.myModal__consult h6{
+    margin-bottom: 15px;
+}
+.myModal__consult p{
+    font-family:'proximaBold';
+    font-size: 16px;
+    color: #9594a0;
+}
+.myModal__describe h3{
+    font-family:'proximaBold';
+    line-height: 1.2;
+    padding-bottom: 15px;
+}   
+.myModal__describe h4{
+    font-size: 30px;
+    font-family:'proximaBold';
+    color: #01afba;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #e2e2e2;
+    margin-bottom: 20px;
+}
+.myModal__describe p{
+    margin-bottom: 10px;
+}
+.myModal__desc{
+    padding-top: 25px;
+    border-top: 1px solid #e2e2e2;
+}
+#myModal .close,
+#myModal2 .close{
+    width: 44px;
+    height: 46px;
+    background: url(../img/close-icon.png)no-repeat;
+    position: absolute;
+    right: -56px;
+    opacity: 1;
+    color: transparent;
+    font-size: 0;
+}
+
+#myModal2 .modal-body{
+    overflow: hidden;
+    padding: 80px;
+}
+#myModal2 .modal-body{
+    background: #fff url(../img/girl-popup.jpg)no-repeat center bottom;
+}
+.myModal2__describe{
+    width: 60%;
+}
+.myModal2__describe h3{
+    font-family:'proximaBold';
+    line-height: 1.2;
+    margin-bottom: 35px;
+}
+.myModal2__describe h6{
+    font-family:'proximaRegular';
+    padding-bottom: 13px;
+    border-bottom: 1px solid #e2e2e2;
+    margin-bottom: 90px;
+}
+.myModal2__describe h4{
+    font-size: 30px;
+    font-family:'proximaBold';
+}
+.myModal2__describe a{
+    font-size: 30px;
+    font-family:'proximaBold';
+    color: #01afba;
+    text-decoration: underline;
+}
+@media(max-width: 1200px){
+    .wrapper{
+        width: 1024px;
+        padding: 0 15px;
+    }
+    .header-top__logo h3{
+        font-size: 40px;
+    }
+    .header-top__phone h3{
+        font-size: 35px;
+    }
+    .header-bottom{
+        padding-bottom: 200px;   
+    }
+    .header-bottom h1{
+        line-height: 1;
+        padding-top: 30px;
+    }
+    .main-about__left{
+        width: 28%;
+    }
+    .main-about__right p{
+        margin-bottom: 20px;
+        line-height: 1.2;
+    }
+    .main-form__right input[name="name"], 
+    .main-form__right input[name="phone"], 
+    .main-form__right textarea{
+        width: 92%; 
+    }
+    .adv_first__item h5,
+    .adv_second__item h5{
+        font-size: 17px;
+    }
+    .main-objects__col{
+        margin: 0 15px;
+    }
+    .footer-left,
+    .footer-right{
+        width: 50%;
+    }
+    #myModal .modal-dialog,
+    #myModal2 .modal-dialog{
+        width: 900px;
+    }
+}
+@media(max-width: 990px){
+    .wrapper,
+    .container,
+    .container-carosel{
+        width: 100%;
+        padding: 0 15px;
+    }
+    .header-top__logo h3{
+        font-size: 30px;
+    }
+    .header-top__logo h4{
+        font-size: 19px;
+    }
+    .header-top__logo{
+        -webkit-background-size: 7%;
+        background-size: 7%;
+    }
+    .header-top__phone h3{
+        font-size: 25px;
+    }
+    .header-top__phone h5{
+        font-size: 16px;
+    }
+    .header-bottom{
+        padding-bottom: 85px;
+    }
+    .main-nav li{
+        padding: 0 12px;
+    }
+    .main-about{
+        padding-top: 50px;
+    }
+    .main-about__left{
+        width: 34%;
+    }
+    .header-bottom h1{
+        font-size: 44px;
+    }
+    .main-form__left h4{
+        line-height: 1.3;
+    }
+    .main-advantages__title{
+        padding: 40px 0;
+    }
+    .adv_first:before,
+    .adv_second:before{
+        width: 100%;
+    }
+    .adv_first__col{
+        width: 100%;
+    }
+    .adv_second__col{
+        margin-left: 0;
+        width: 100%;
+    }
+    .main-objects{
+        padding-top: 50px;
+    }
+    .main-objects__col{
+        width: 100%;
+        margin: 0;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .spec__item img{
+        width: auto !important;
+        display: inline-block !important;
+    }
+    .second-carousel{
+        margin: 45px 0;
+    }
+    .main-specialists .title-vacancy{
+        padding-top: 15px;
+    }
+    .client-container{
+        margin-top: 50px;
+    }
+    .main-partners{
+        padding-top: 35px;
+    }
+    .main-partners h3{
+        margin-bottom: 35px;
+    }
+    .main-partners__item{
+        width: 33.33%;
+        margin-bottom: 30px;
+    }
+    .main-partners__col{
+        margin-bottom: 18px;
+    }
+    .footer-left{
+        width: 30%;
+    }
+    .footer-right{
+        width: 70%;
+    }
+    #myModal .modal-dialog,
+    #myModal2 .modal-dialog{
+        width: 80%;
+    }
+    .col-5{
+        width: 100%;
+    }
+    .myModal__img{
+        text-align: center;
+    }
+    .myModal__consult{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .myModal__describe h3,
+    .myModal__describe h4{
+        text-align: center;
+    }
+    .myModal2__describe{
+        width: 100%;
+        text-align: center;
+    }
+    .myModal2__describe h6{
+        margin-bottom: 20px;
+    }
+}
+@media(max-width: 797px){
+    .header-top__col{
+        width: 100%;
+        text-align: center;
+        display: block;
+        margin-bottom: 20px;
+    }
+    .header-top__logo{
+        -webkit-background-size: 4%;
+        background-size: 4%;
+        background-position: 20% 50%;
+    }
+    .main-nav{
+        display: none;
+    }
+    .main-about__left{
+        width: 39%;
+    }
+    .main-form__left h2 span{
+        font-size: 110px;
+    }
+    .main-form__left{
+        width: 100%;
+        text-align: center;
+        padding-right: 0;
+        padding-top: 25px;
+    }
+    .main-form__right{
+        width: 100%;
+        padding-left: 25px;
+    }
+    .main-form:after{
+        width: 100%;
+        height: 40%;
+    }
+    .main-specialists h2{
+        padding-top: 10px;
+        margin-bottom: 20px;
+    }
+    .main-recalls{
+        padding: 40px 0;
+    }
+    .main-recalls h3{
+        padding-bottom: 15px;
+    }
+    .main-recalls h4{
+        width: 100%;
+        padding-bottom: 15px;
+    }
+    .url-link{
+        margin: 0 5px;
+    }
+    .owl-carousel-second h4{
+        padding-left: 145px;
+    }
+    .footer-right__col h4{
+        font-size: 22px;
+    }
+    .footer-right__col p{
+        font-size: 11px;
+    }
+    .client-container{
+        width: 100%;
+        padding: 0 15px;
+    }
+    #myModal .modal-dialog,
+    #myModal2 .modal-dialog{
+        width: 95%;
+    }
+    #myModal .close,
+    #myModal2 .close{
+        background: transparent;
+        font-size: 20px;
+        color: #000;
+        right: 0;
+        position: relative;
+        width: auto;
+        height: auto;
+        right: 10px;
+        top: 10px;
+        z-index: 999;
+    }
+    #myModal2 .modal-body{
+        padding: 20px;
+    }
+    .myModal2__describe h3{
+        font-size: 35px;
+    }
+}
+@media(max-width: 479px){
+    .header-top__logo{
+        padding-left: 0;
+        background: none;
+    }
+    .header-top__phone h5{
+        font-size: 13px;
+    }
+    .header-top__nav li{
+        margin: 0 15px;
+    }
+    .header-bottom h1{
+        font-size: 30px;
+        line-height: 1.4;
+    }
+    .main-about__left,
+    .main-about__right{
+        width: 100%;
+    }
+    .main-about__partners li a{
+        width: 100%;
+    }
+    .main-about__right p{
+        text-align: justify;
+    }
+    .main-form__left h2 span{
+        font-size: 80px;
+    }
+    .main-form__right{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .main-form__right input[name="name"], 
+    .main-form__right input[name="phone"], 
+    .main-form__right textarea{
+        width: 100%;
+    }
+    .main-form__right input[type="submit"]{
+        width: 100%;
+    }
+    .adv_first__item{
+        width: 100%;
+    }
+    .adv_first,
+    .adv_first:before{
+        height: 600px;
+    }
+    .adv_second__item{
+        width: 100%;
+    }
+    .adv_second,
+    .adv_second:before{
+        height: 400px;
+    }
+    .adv_second__item{
+        margin: 0;
+    }
+    .main-specialists h2{
+        font-size: 26px;
+    }
+    .client-col{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .client-container button{
+        width: 100%;
+    }
+    .owl-carousel-second p{
+        padding-left: 0;
+        padding-top: 60px;
+        text-align: center;
+    }
+    .owl-carousel-second h4,
+    .owl-carousel-second a{
+        padding-left: 0;
+        text-align: center;
+    }
+    .main-partners h3{
+        font-size: 30px;
+    }
+    .main-partners__item{
+        width: 100%;
+    }
+    .footer-left,
+    .footer-right{
+        width: 100%;
+        text-align: center;
+    }
+    .footer-right__col{
+        width: 100%;
+        margin: 20px 0;
+    }
+}
